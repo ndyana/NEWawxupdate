@@ -2,6 +2,6 @@
 - hosts: 192.168.2.33
   tasks: 
    - name: Copy Windows Updates from logs into ppms folder
-     ansible.windows.win_copy:
+     win_copy:
        src: C:\Windows\SoftwareDistribution\ReportingEvents.txt
        dest: C:\ppms\ReportingEvents.txt
