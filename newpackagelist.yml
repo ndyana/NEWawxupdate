@@ -4,6 +4,6 @@
   tasks: 
     - name: Copy Windows Updates from logs into ppms folder
       win_copy:
-        src: C:\Windows\SoftwareDistribution\ReportingEvents.txt
+        src: C:\ppms\test.txt
         dest: C:\ppms\ReportingEvents.txt
         remote_src: yes
