@@ -1,7 +1,9 @@
 ---
-- hosts: 192.168.2.33
+- name: Package List
+  hosts: 192.168.2.33
+
   tasks: 
-   - name: Copy Windows Updates from logs into ppms folder
-     win_copy:
-       src: C:\Windows\SoftwareDistribution\ReportingEvents.txt
-       dest: C:\ppms\ReportingEvents.txt
+    - name: Copy Windows Updates from logs into ppms folder
+      win_copy:
+        src: C:\Windows\SoftwareDistribution\ReportingEvents.txt
+        dest: C:\ppms\ReportingEvents.txt
