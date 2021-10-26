@@ -1,6 +1,5 @@
 ---
-- name: Package List
-  hosts: 192.168.2.33
+- hosts: 192.168.2.33
 
   tasks: 
     - name: Copy Windows Updates from logs into ppms folder
