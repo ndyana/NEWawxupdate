@@ -6,3 +6,4 @@
       win_copy:
         src: C:\Windows\SoftwareDistribution\ReportingEvents.txt
         dest: C:\ppms\ReportingEvents.txt
+        remote_src: yes
